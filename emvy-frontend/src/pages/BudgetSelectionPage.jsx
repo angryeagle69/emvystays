@@ -40,7 +40,8 @@ const BudgetSelectionPage = ({ onNext, onBack }) => {
       customRange: { min: customMin, max: customMax }
     };
     console.log('Selected budget:', budgetData);
-    if (onNext) onNext();
+    //if (onNext) onNext();
+    navigate('/countdown');
   };
 
   const handleBack = () => {

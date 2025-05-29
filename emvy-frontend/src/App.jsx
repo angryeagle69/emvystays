@@ -10,6 +10,7 @@ import LocationSelectionPage from "./pages/LocationSelectionPage";
 import HotelVibeSelectionPage from "./pages/HotelVibeSelectionPage";
 import AmenitiesSelectionPage from "./pages/AmenitiesSelectionPage";
 import BudgetSelectionPage from "./pages/BudgetSelectionPage";
+import CountdownLoadingPage from "./pages/CountdownLoadingPage";
 
 function App() {
   const [selectedHotel, setSelectedHotel] = useState(null);
@@ -27,6 +28,7 @@ function App() {
             <Route path="/vibe" element={<HotelVibeSelectionPage />} />
             <Route path="/amenity" element={<AmenitiesSelectionPage />} />
             <Route path="/budget" element={<BudgetSelectionPage />} />
+            <Route path="/countdown" element={<CountdownLoadingPage />} />
             <Route 
               path="/hotels" 
               element={
